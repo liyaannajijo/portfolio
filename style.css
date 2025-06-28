@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ddd;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  width: 50px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #ddd;
+  transform: scale(1.1);
+}
+
+.linkedin { color: #0077b5; }
+.instagram { color: #e4405f; }
+.github { color: #171515; }
+.email { color: #dd4b39; }
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .card {
+    padding: 30px 20px;
+  }
+}
